@@ -12,3 +12,5 @@ RUN apt-get -y install mc curl lynx
 COPY run.sh /root/run.sh
 
 EXPOSE 80 443
+
+# extra: apt multiverse > libapache2-mod-fastcgi
