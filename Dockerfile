@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y install apache2 php5 php5-common php5-cli php-p
 
 # config & install fastcgi
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise main multiverse" >> /etc/apt/sources.list
-RUN apt-get -y install libapache2-mod-fastcgi && a2enmod fastcgi
+RUN apt-get update && apt-get -y install libapache2-mod-fastcgi && a2enmod fastcgi
 
 # settings
 RUN a2enmod rewrite && a2enmod suexec &&  a2enmod actions alias
