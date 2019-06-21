@@ -14,3 +14,4 @@ COPY run.sh /root/run.sh
 EXPOSE 80 443
 
 # extra: apt multiverse > libapache2-mod-fastcgi
+# apt-get install libapache2-mod-fastcgi
