@@ -10,6 +10,7 @@ RUN a2enmod rewrite && a2enmod suexec &&  a2enmod actions alias
 RUN apt-get -y install mc curl lynx
 
 COPY run.sh /root/run.sh
+COPY httpd.conf /etc/apache2/httpd.conf
 
 EXPOSE 80 443
 
