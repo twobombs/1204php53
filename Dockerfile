@@ -6,5 +6,6 @@ RUN apt-get update && apt-get -y install apache2 php5 php5-common php5-cli php5-
 # optional tools
 RUN apt-get -y install mc curl lynx
 
+COPY run.sh /root/run.sh
 
 EXPOSE 80 443
