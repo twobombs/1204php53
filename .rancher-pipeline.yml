@@ -7,4 +7,11 @@ stages:
       tag: "1204"
       registry: index.docker.io
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: '#EXP'
+    notifier: c-qkqp8:n-g96zn
+  condition:
+  - Success
+  - Changed
+  - Failed
